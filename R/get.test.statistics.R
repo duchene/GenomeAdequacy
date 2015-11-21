@@ -13,7 +13,7 @@ get.test.statistics <- function(sdata, format = "phyllip", geneName = "empirical
 
 
 	# Run PhyML and extract the maximum likelihood, tree, and parameter estimates.
-	print(format)
+	
 	phymlres <- runPhyML(sdata, format = format, temp_name = geneName, phymlPath = phymlPath, model = model)
 	
 	# Get test statistics.

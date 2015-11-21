@@ -3,7 +3,7 @@
 run.gene <- function(sdata, format = "phyllip", model = "GTR+G", phymlPath, Nsims = 100){
 	 
 	 # Get test statistics
-	 print(format)
+	 
 	 if(format == "phyllip"){
                   data <- read.dna(sdata)
          } else if(format == "fasta"){
@@ -32,7 +32,7 @@ run.gene <- function(sdata, format = "phyllip", model = "GTR+G", phymlPath, Nsim
 	 # Get test statistics for simulations.
 
 	 sim.stats <- list()
-	 print("STARTED RUNNING SIMS")
+	 
 	 for(i in 1:Nsims){	       
 	       sim.stats[[i]] <- get.test.statistics(sim[[i]], format = "DNAbin", geneName = paste0(sdata, "_sim_", i), phymlPath = phymlPath, model = model)
 	       system(paste0("rm ", paste0(sdata, "_sim_", i)))
