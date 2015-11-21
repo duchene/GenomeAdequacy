@@ -22,13 +22,25 @@ run.genome <- function(format = "phyllip", model = "GTR+G", phymlPath, Nsims = 1
 	   
 	   names(geneStats) <- genes
 
-	   genomeStats <- matrix(NA, nrow = length(genes), ncol = 7)
-	   elements <- seq(1, 13, by = 2)
-	   for(i in 1:7){
-	   	 genomeStats[i,] <- sapply(geneStats, function(x) x[[elements[i]]])
+	   genomeStats <- matrix(NA, nrow = length(genes), ncol = 14)
+	   for(i in 1:14){
+	   	 genomeStats[,i] <- sapply(geneStats, function(x) x[[i]])
  	   }
+	   geneTrees <- sapply(geneStats, function(x) x[[15]])
+	   names(geneTrees) <- genes
+	   
+	   if(model == "GTR+G"){
+	   	    geneInferences <- list()
+		    for(i in 1:length(geneStats)){
+		    	  geneInferences[i] <- geneStats[[i]][16:18]
+		    }
+		    names(geneInferences) <- genes
+	   }	   
+
+
 	   rownames(genomeStats) <- genes
-	   colnames(genomeStats) <- names(geneStats[[1]])[elements]
+	   colnames(genomeStats) <- names(geneStats[[1]])[1:14]
+	   results <- list(genome.results = genomeStats, empirical.trees = geneTrees, empirical.parameters)
 
 	   return(genomeStats)
 

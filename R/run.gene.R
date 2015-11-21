@@ -35,6 +35,7 @@ run.gene <- function(sdata, format = "phyllip", model = "GTR+G", phymlPath, Nsim
 	 print("STARTED RUNNING SIMS")
 	 for(i in 1:Nsims){	       
 	       sim.stats[[i]] <- get.test.statistics(sim[[i]], format = "DNAbin", geneName = paste0(sdata, "_sim_", i), phymlPath = phymlPath, model = model)
+	       system(paste0("rm ", paste0(sdata, "_sim_", i)))
 	 }
 
 	 # Get P-values for test statistics.
