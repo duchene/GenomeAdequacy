@@ -1,6 +1,7 @@
 # Runs get.test.statistics for a given gene and its simulations.
 
 run.gene <- function(sdata, format = "DNAbin", model = "GTR+G", phymlPath){
+	 
 	 # Get test statistics
 
 	 if(format == "phyllip"){
