@@ -58,7 +58,7 @@ runPhyML <- function(sdata, format = 'DNAbin', temp_name, phymlPath = '~/Downloa
     uncLikelihoodLocation <- grep('Unconstrained likelihood', outputStats)
     uncLikelihood <- as.numeric(gsub('[A-Z]|[a-z]| |:|[.] |\t', '', outputStats[uncLikelihoodLocation]))
 
-    delta <- uncLikelihood - likelihood 
+    delta <- abs(likelihood - uncLikelihood)
 
     testStats$likelihood <-  likelihood
     testStats$uncLikelihood <-  uncLikelihood
