@@ -1,37 +1,39 @@
 # Runs get.test.statistics for a given gene and its simulations.
 
-run.gene <- function(sdata, format = "DNAbin", model = "GTR+G", phymlPath){
+run.gene <- function(sdata, format = "phyllip", model = "GTR+G", phymlPath, Nsims = 100){
 	 
 	 # Get test statistics
-
+	 print(format)
 	 if(format == "phyllip"){
                   data <- read.dna(sdata)
          } else if(format == "fasta"){
                   data <- read.dna(sdata, format = "fasta")
          }
-
-	 empstats <- get.test.statsitics(data, format = format, geneName = sdata, phymlPath = phymlPath, model = model)
+	 
+	 empstats <- get.test.statistics(sdata, format = format, geneName = sdata, phymlPath = phymlPath, model = model)
 
 	 # Simulate data sets.
 
 	 l <- ncol(data)
 	 sim <- list()
-	 for(i in 1:100){
+	 for(i in 1:Nsims){
 	       if(model == "GTR+G"){
                	      rates = phangorn:::discrete.gamma(empstats$alphaParam, k = 4)
                	      rates <- rates + 0.001
                	      sim_dat_all <- lapply(rates, function(r) simSeq(empstats$outputTree, l = round(l/4, 0), Q = empstats$gtrMatrix, bf = empstats$piParams, rate = r))
-               	      sim[[i]] <- c(sim_dat_all[[1]], sim_dat_all[[2]], sim_dat_all[[3]], sim_dat_all[[4]])
-	       } else if(model == "JC")
-	       	      sim[[i]] <- simSeq(empstats$outputTree, l = l)
+               	      sim[[i]] <- as.DNAbin(c(sim_dat_all[[1]], sim_dat_all[[2]], sim_dat_all[[3]], sim_dat_all[[4]]))
+	       } else if(model == "JC"){
+	       	      sim[[i]] <- as.DNAbin(simSeq(empstats$outputTree, l = l))
 	       }
 	 
 	 }
+	 
 
 	 # Get test statistics for simulations.
 
 	 sim.stats <- list()
-	 for(i in 1:100){	       
+	 print("STARTED RUNNING SIMS")
+	 for(i in 1:Nsims){	       
 	       sim.stats[[i]] <- get.test.statistics(sim[[i]], format = "DNAbin", geneName = paste0(sdata, "_sim_", i), phymlPath = phymlPath, model = model)
 	 }
 
@@ -55,9 +57,9 @@ run.gene <- function(sdata, format = "DNAbin", model = "GTR+G", phymlPath){
 	 results <- list(empirical.multlik = empstats[[1]], multlik.p.value = multinom.p, empirical.chisq = empstats[[2]], chisq.p.value = chisq.p, empirical.homoplasy = empstats[[3]], homoplasy.p.value = homo.p, empirical.mean.branch.sup = empstats[[4]], mean.branch.sup.p.value = meanbrsu.p, empirical.CI.branch.sup = empstats[[5]], CI.branch.sup.p.value = CIbrsu.p, empirical.delta = empstats[[6]], delta.p.value = delta.p, empirical.tree.length = empstats[[7]], tree.length.p.value = trlen.p, empirical.tree = empstats$outputTree)
 
 	 if(model == "GTR+G"){
-                 results$gtrMatrix <- phymlres$gtrMatrix
-                 results$piParams <- phymlres$piParams
-                 results$alphaParam <- phymlres$alphaParam
+                 results$gtrMatrix <- empstats$gtrMatrix
+                 results$piParams <- empstats$piParams
+                 results$alphaParam <- empstats$alphaParam
          }
 
 	 return(results)

@@ -1,4 +1,4 @@
-runPhyML <- function(sdata, format = 'DNAbin', temp_name, phymlPath = '~/Downloads/PhyML-3.1/PhyML-3.1_macOS-MountainLion', model = 'JC'){
+runPhyML <- function(sdata, format = 'phyllip', temp_name, phymlPath = '~/Downloads/PhyML-3.1/PhyML-3.1_macOS-MountainLion', model = 'JC'){
     require(phangorn)
 
     if(format == 'fasta'){
@@ -11,7 +11,7 @@ runPhyML <- function(sdata, format = 'DNAbin', temp_name, phymlPath = '~/Downloa
     }else{
         fileName = sdata
     }
-
+    print(fileName)
     if(model == 'JC'){
         phymlOptions = ' -m jc69 -c 1 -i'
     }
@@ -22,10 +22,10 @@ runPhyML <- function(sdata, format = 'DNAbin', temp_name, phymlPath = '~/Downloa
     phymlCommand = paste0(phymlPath, phymlOptions, fileName)
 
     system(phymlCommand)
-    outTreeName <- paste0(fileName, '_phyml_stats.txt')
-    outStatsName <- paste0(fileName, '_phyml_tree.txt')
-    outputStats <- readLines(outTreeName)
-    outputTree <- read.tree(outStatsName)
+    outTreeName <- paste0(fileName, '_phyml_tree.txt')
+    outStatsName <- paste0(fileName, '_phyml_stats.txt')
+    outputStats <- readLines(outStatsName)
+    outputTree <- read.tree(outTreeName)
 
     testStats <- list()
 

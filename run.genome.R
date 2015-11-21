@@ -1,14 +1,23 @@
 # This function runs model adequacy assessment for genes in a file.
 
 
-run.genome <- function(format = "phillip", model = "GTR+G", phymlPath){
+run.genome <- function(format = "phyllip", model = "GTR+G", phymlPath, Nsims = 100){
 	   require(phangorn)
-	   
-	   genes <- dir()
-	   geneStats <- list
-	   
+	   print(format)
+	   print(grep(".+phy", dir(), value = T))
+	   if(format == "phyllip"){
+	   	   genes <- grep(".+phy", dir(), value = T)
+		   print(genes)
+	   } else if(format == "fasta"){
+	     	   genes <- grep(".+[.]fasta", dir(), value = T)
+	   }
+	   geneStats <- list()
+	   print(genes)
 	   for(i in 1:length(genes)){
-	   	 geneStats[[i]] <- run.gene(genes[i], format = format, model = model, phymlPath = phymlPath)
+	   	 print(genes[i])
+		 genes[i]
+	   	 geneStats[[i]] <- run.gene(genes[i], format = format, model = model, phymlPath = phymlPath, Nsims = Nsims)
+		 print(geneStats[[i]])
 	   }
 	   
 	   names(geneStats) <- genes
