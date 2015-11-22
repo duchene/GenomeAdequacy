@@ -13,10 +13,10 @@ runPhyML <- function(sdata, format = 'phyllip', temp_name, phymlPath = '~/Downlo
     }
     print(fileName)
     if(model == 'JC'){
-        phymlOptions = ' -m jc69 -c 1 --q -i '
+        phymlOptions = ' -m jc69 -c 1 -q -i '
     }
     else if(model == 'GTR+G'){
-        phymlOptions = ' -m gtr -a e --q -i '
+        phymlOptions = ' -m gtr -a e -q -i '
     }
 
     phymlCommand = paste0(phymlPath, phymlOptions, fileName)

@@ -1,6 +1,6 @@
 # Runs get.test.statistics for a given gene and its simulations.
 
-run.gene <- function(sdata, format = "phyllip", model = "GTR+G", phymlPath, Nsims = 100, para = F, ncore = 1){
+run.gene <- function(sdata, format = "phyllip", model = "GTR+G", phymlPath, Nsims = 100, para = F){
 	 
 	 # Get test statistics
 	 
@@ -49,7 +49,7 @@ run.gene <- function(sdata, format = "phyllip", model = "GTR+G", phymlPath, Nsim
              system(paste0("rm ", paste0(sdata, "_sim_", i)))
 	     return(tRep)		
 	   }	  
-	   cl <- makeCluster(ncore)
+	   cl <- makeCluster(4)
 	   registerDoParallel(cl)
 	   simReps <- foreach(x = 1:Nsims, .packages = c('phangorn', 'ape'), .export = c('get.test.statistics', 'runPhyML', 'getchisqs')) %dopar% runSim(x)
 	   sim.stats <- simReps 

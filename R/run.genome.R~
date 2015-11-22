@@ -1,7 +1,7 @@
 # This function runs model adequacy assessment for genes in a file.
 
 
-run.genome <- function(format = "phyllip", model = "GTR+G", phymlPath, Nsims = 100, paragenome = F, paragene = F, ncore = 1){
+run.genome <- function(format = "phyllip", model = "GTR+G", phymlPath, Nsims = 100){
 	   require(phangorn)
 	   
 	   if(format == "phyllip"){
@@ -12,24 +12,10 @@ run.genome <- function(format = "phyllip", model = "GTR+G", phymlPath, Nsims = 1
 	   }
 	   geneStats <- list()
 	   
-	   if(!paragenome){
-	     for(i in 1:length(genes)){
+	   for(i in 1:length(genes)){
 	   	 print(genes[i])
 		 genes[i]
-	   	 geneStats[[i]] <- run.gene(genes[i], format = format, model = model, phymlPath = phymlPath, Nsims = Nsims, para = paragene, ncore = ncore)
-	     }
-	   }else{
-	     ## START PARALLEL COMPUTING
-	     runGene <- function(i){
-	       return(run.gene(genes[i], format = format, model = model, phymlPath = phymlPath, Nsims = Nsims))
-	     }
-	     
-	     cl <- makeCluster(ncore)
-	     registerDoParallel(cl)
-	     geneRuns <- foreach(x = 1:length(genes), .packages = c('phangorn', 'ape'), .export = c('get.test.statistics', 'runPhyML', 'getchisqs', 'run.gene')) %dopar% runGene(x)
-	     stopCluster(cl)
-	     geneStats <- geneRuns
-	     ## END PARALLEL COMPUTING
+	   	 geneStats[[i]] <- run.gene(genes[i], format = format, model = model, phymlPath = phymlPath, Nsims = Nsims)
 	   }
 	   
 	   names(geneStats) <- genes
@@ -38,7 +24,7 @@ run.genome <- function(format = "phyllip", model = "GTR+G", phymlPath, Nsims = 1
 	   for(i in 1:14){
 	   	 genomeStats[,i] <- sapply(geneStats, function(x) x[[i]])
  	   }
-	   geneTrees <- lapply(geneStats, function(x) x[[15]])
+	   geneTrees <- sapply(geneStats, function(x) x[[15]])
 	   names(geneTrees) <- genes
 	   
 	   if(model == "GTR+G"){
