@@ -11,7 +11,7 @@ for(i in 1:length(schemes)){
       setwd(schemes[i])
       resfiles <- grep("[.]Rdata", dir(), value = T)
       for(j in 1:length(resfiles)){
-      	    load(resfiles[i])
+      	    load(resfiles[j])
 	    simres[1:7, i] <- rowMeans(cbind(simres[1:7, i], unlist(rT[c(2,4,6,8,10,12,14)])), na.rm = T)
       }
       setwd("..")
