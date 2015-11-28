@@ -1,0 +1,52 @@
+setwd("simulation_results")
+
+schemes <- dir()
+
+simres <- matrix(NA, nrow = 9, ncol = 9)
+colnames(simres) <- schemes
+rownames(simres) <- c("multinomial", "chisq", "homoplasy", "meanbrsup", "CIbrsup", "delta", "trlen", "topodif", "trlendif")
+
+for(i in 1:length(schemes)){
+
+      setwd(schemes[i])
+      resfiles <- grep("[.]Rdata", dir(), value = T)
+      for(j in 1:length(resfiles)){
+      	    load(resfiles[i])
+	    simres[1:7, i] <- rowMeans(cbind(simres[1:7, i], unlist(rT[c(2,4,6,8,10,12,14)])), na.rm = T)
+      }
+      setwd("..")
+}
+
+
+
+
+for(i in 1:100){ 
+
+simres[8, 1] <- mean(c(simres[8, 1], dist.topo(basecomp9trs[[i]], het_9[[i]])), na.rm = T)
+simres[9, 1] <- mean(c(simres[9, 1], abs(sum(het_9[[i]]$edge.length) - sum(basecomp9trs[[i]]$edge.length))), na.rm = T)
+
+simres[8, 2] <- mean(c(simres[8, 2], dist.topo(misal25trs[[i]], trs[[i]])), na.rm = T)
+simres[9, 2] <- mean(c(simres[9, 2], abs(sum(trs[[i]]$edge.length) - sum(misal25trs[[i]]$edge.length))), na.rm = T)
+
+simres[8, 3] <- mean(c(simres[8, 3], dist.topo(misal05trs[[i]], trs[[i]])), na.rm = T)
+simres[9, 3] <- mean(c(simres[9, 3], abs(sum(trs[[i]]$edge.length) - sum(misal05trs[[i]]$edge.length))), na.rm = T)
+
+simres[8, 4] <- mean(c(simres[8, 4], dist.topo(nuldatgtrtrs[[i]], trs[[i]])), na.rm = T)
+simres[9, 4] <- mean(c(simres[9, 4], abs(sum(trs[[i]]$edge.length) - sum(nuldatgtrtrs[[i]]$edge.length))), na.rm = T)
+
+simres[8, 5] <- mean(c(simres[8, 5], dist.topo(nuldatjctrs[[i]], trs[[i]])), na.rm = T)
+simres[9, 5] <- mean(c(simres[9, 5], abs(sum(trs[[i]]$edge.length) - sum(nuldatjctrs[[i]]$edge.length))), na.rm = T)
+
+simres[8, 6] <- mean(c(simres[8, 6], dist.topo(satlongtrs[[i]], lngtrs[[i]])), na.rm = T)
+simres[9, 6] <- mean(c(simres[9, 6], abs(sum(lngtrs[[i]]$edge.length) - sum(satlongtrs[[i]]$edge.length))), na.rm = T)
+
+simres[8, 7] <- mean(c(simres[8, 7], dist.topo(satlongesttrs[[i]], lngsttrs[[i]])), na.rm = T)
+simres[9, 7] <- mean(c(simres[9, 7], abs(sum(lngsttrs[[i]]$edge.length) - sum(satlongesttrs[[i]]$edge.length))), na.rm = T)
+
+simres[8, 8] <- mean(c(simres[8, 8], dist.topo(underpgtrtrs[[i]], trs[[i]])), na.rm = T)
+simres[9, 8] <- mean(c(simres[9, 8], abs(sum(trs[[i]]$edge.length) - sum(underpgtrtrs[[i]]$edge.length))), na.rm = T)
+
+simres[8, 9] <- mean(c(simres[8, 9], dist.topo(underpjctrs[[i]], trs[[i]])), na.rm = T)
+simres[9, 9] <- mean(c(simres[9, 9], abs(sum(trs[[i]]$edge.length) - sum(underpjctrs[[i]]$edge.length))), na.rm = T)
+
+}
