@@ -2,9 +2,10 @@ setwd("simulation_results")
 
 schemes <- dir()
 
-simres <- matrix(NA, nrow = 9, ncol = 9)
+simres <- matrix(0, nrow = 7, ncol = 10)
 colnames(simres) <- schemes
 rownames(simres) <- c("multinomial", "chisq", "homoplasy", "meanbrsup", "CIbrsup", "delta", "trlen", "topodif", "trlendif")
+rtind <- seq(2, 14, 2)
 
 for(i in 1:length(schemes)){
 
@@ -12,7 +13,9 @@ for(i in 1:length(schemes)){
       resfiles <- grep("[.]Rdata", dir(), value = T)
       for(j in 1:length(resfiles)){
       	    load(resfiles[j])
-	    simres[1:7, i] <- rowMeans(cbind(simres[1:7, i], unlist(rT[c(2,4,6,8,10,12,14)])), na.rm = T)
+	    for(k in 1:7){
+	    	  if(rT[[rtind[k]]] < 0.05 | rT[[rtind[k]]] > 0.95) simres[k, i] <- simres[k, i] + 1
+	    }
       }
       setwd("..")
 }
