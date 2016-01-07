@@ -1,0 +1,582 @@
+193 128
+I0185_86_Accipitridae_Buteo_jamaicensis                   ccccatgctc cttatccatg atgctgagga ctcccagcat ggaggcccca gtcatgtgga
+I0186_111_Momotidae_Momotus_lessonii                      ccccatgctc cttatccatg atgctgagga ctcccagcat ggaggcccca gtcatgtgga
+I0187_115_Trogonidae_Trogon_elegans                       ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0188_135_Apodidae_Streptoprocne_zonaris                  ccccatgctc tttatccatg atgcttagga ctcccagcat ggaggcccca gtcatgtgga
+I0189_225_Eurylaimidae_Smithornis_rufolateralis           ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0190_295_Trogonidae_Apaloderma_aequatoriale              ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0191_344_Indicatoridae_Indicator_exilis                  ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggaccca gtcatgtgga
+I0192_375_Musophagidae_Tauraco_macrorhynchus              ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0193_447_Columbidae_Treron_calvus                        ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0194_495_Alcedinidae_Alcedo_quadribrachys                ccccatgctc tttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0195_522_Ramphastidae_Buccanodon_duchaillui              ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0196_523_Musophagidae_Corythaeola_cristata               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0197_832_Corvidae_Corvus_albus                           ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0198_937_Bucerotidae_Tockus_camurus                      ccccatgctc cttatccatg atgctgagga ctcccagcat ggaggcccca gtcatgtgga
+I0199_955_Meropidae_Merops_muelleri                       ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0200_988_Furnariidae_Furnarius_rufus                     ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0201_999_Scolopacidae_Tringa_solitaria                   ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0202_1066_Cathartidae_Cathartes_burrovianus              ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0203_1087_Tyrannidae_Hymenops_perspicillatus             ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0204_1174_Threskiornithidae_Harpiprion_caerulescens      ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0205_1183_Tyrannidae_Hirundinea_ferruginea               tcccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0206_1192_Laridae_Chroicocephalus_cirrocephalus          ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0207_1193_Thamnophilidae_Thamnophilus_ruficapillus       ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0208_1208_Strigidae_Strix_varia                          ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0209_1223_Burhinidae_Burhinus_oedicnemus                 ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0210_1226_Ciconiidae_Ciconia_nigra                       ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatatgga
+I0211_1232_Columbidae_Columba_livia                       ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0212_1289_Charadriidae_Charadrius_hiaticula              ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0213_1334_Picidae_Jynx_torquilla                         ccccatgctc cttatccatg atgctcagga ctcccagcat agaggcccca gtcatgtgga
+I0214_1354_Sylviidae_Sylvia_melanocephala                 ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0215_1370_Regulidae_Regulus_ignicapilla                  ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0216_1413_Falconidae_Micrastur_gilvicollis               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0217_1452_Cotingidae_Rupicola_rupicola                   ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0218_1474_Tityridae_Myiobius_barbatus                    ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0219_1489_Trochilidae_Topaza_pella                       ccccatgctc tttatccatg atgctcagga ttcccagcat ggaggcccca gtcatgtgga
+I0220_1514_Trochilidae_Phaethornis_superciliosus          ccccatgctc tttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0221_1526_Columbidae_Leptotila_rufaxilla                 ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0222_1568_Turdidae_Turdus_olivater                       ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0223_1586_Furnariidae_Sclerurus_mexicanus                ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0224_1607_Cracidae_Crax_alector                          ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0225_1616_Incertae_sedis_Piprites_chloris                ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0226_1619_Odontophoridae_Odontophorus_gujanensis         ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0227_1698_Tyrannidae_Rhynchocyclus_olivaceus             ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0228_1712_Pipridae_Neopelma_chrysocephalum               ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0229_1748_Tinamidae_Nothoprocta_ornata                   ccccatgctc cttatccatg atgctgagca ctcccagcat ggaggcccca gtcatgtgga
+I0230_1770_Tinamidae_Crypturellus_tataupa                 ccccatgctc cttatccatg atgctgagca ctcccagcat ggaggcccca gtcatgtgga
+I0232_1837_Fringillidae_Fringilla_coelebs                 ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0233_1920_Upupidae_Upupa_epops                           ccccatgctc cttatccatg atgctcagca ctcccagcat cgaggcccca gtcatgtgga
+I0234_1994_Todidae_Todus_mexicanus                        ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0235_2065_Cuculidae_Coccyzus_melacoryphus                ccccatgctc cttatccatg atgctcagaa ctcccagcat ggaggcccga gtcatgtgga
+I0236_2079_Falconidae_Falco_sparverius                    ccccatgctc cttatccatg atgctcagga ctcccagcat ggagggccca gtcatgtgga
+I0237_2182_Thamnophilidae_Myrmornis_torquata              ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0238_2211_Cotingidae_Cotinga_cayana                      ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0239_2212_Ardeidae_Tigrisoma_lineatum                    ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0240_2217_Psittacidae_Deroptyus_accipitrinus             ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0241_2249_Pipridae_Pipra_erythrocephala                  ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0242_2273_Furnariidae_Lepidocolaptes_angustirostris      ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0243_2275_Columbidae_Columbina_minuta                    ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0244_2276_Caprimulgidae_Chordeiles_pusillus              ccccatgctc cttatccatg atgctcagga ttcccagcat ggaggcccca gtcatgtgga
+I0245_2800_Ardeidae_Ardea_herodias                        ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0246_2823_Tyrannidae_Tyrannus_albogularis                ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0247_2886_Apodidae_Chaetura_brachyura                    ccccatgctc cttatccatg atgctgagga ctcccagcat ggaggtccca gtcatgtgga
+I0248_2938_Falconidae_Caracara_cheriway                   ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0249_2220_Nyctibiidae_Nyctibius_griseus                  ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0250_2944_Odontophoridae_Colinus_cristatus               ccccatgctc cttatccata atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0251_3044_Tityridae_Tityra_cayana                        ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0252_3154_Anatidae_Anas_superciliosa                     ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0253_3158_Anseranatidae_Anseranas_semipalmata            ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0254_3160_Sulidae_Morus_serrator                         ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0255_3161_Podargidae_Podargus_strigoides                 ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0256_3178_Megapodiidae_Leipoa_ocellata                   ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0257_3236_Anatidae_Oxyura_jamaicensis                    ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0258_3336_Caprimulgidae_Caprimulgus_europaeus            ccccatgctc cttatccatg atgctcagga ttcccagcat agaggcccca gtcatgtgga
+I0259_3344_Picidae_Picus_canus                            ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0260_3380_Dromaiidae_Dromaius_novaehollandiae            ccccatgctc cttatccatg atgctgagga ctcccagcat ggaggcccca gtcatgtgga
+I0261_3515_Thamnophilidae_Terenura_callinota              ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0262_3562_Oxyruncidae_Oxyruncus_cristatus                ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0263_3569_Psophiidae_Psophia_crepitans                   ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0264_3574_Falconidae_Ibycter_americanus                  ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0265_3576_Tityridae_Schiffornis_turdina                  ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0266_3617_Ramphastidae_Capito_niger                      ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0267_3690_Bucconidae_Bucco_capensis                      ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca atcatgtgga
+I0268_3790_Accipitridae_Accipiter_superciliosus           ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0270_4099_Sternidae_Sterna_hirundo                       ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0271_5253_Psittacidae_Psittrichas_fulgidus               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0272_5303_Alcedinidae_Chloroceryle_inda                  ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0273_5315_Galbulidae_Galbula_dea                         ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca atcatgtgga
+I0274_5339_Bucconidae_Chelidoptera_tenebrosa              tcccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca atcatgtgga
+I0275_5404_Balaenicipitidae_Balaeniceps_rex               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0276_5411_Cathartidae_Vultur_gryphus                     ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgaa
+I0277_5465_Trochilidae_Archilochus_colubris               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0278_5642_Phasianidae_Bonasa_umbellus                    ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca atcatgtgga
+I0279_5911_Jacanidae_Jacana_jacana                        ccccatgctc cttatccatg atgctcaaga ctcccagcat ggaggcccca gtcatgtgga
+I0280_5927_Psittacidae_Probosciger_aterrimus              ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0281_5967_Otididae_Ardeotis_kori                         ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0282_6008_Hydrobatidae_Oceanodroma_leucorhoa             ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0283_6026_Anatidae_Dendrocygna_viduata                   ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0284_6031_Coraciidae_Coracias_cyanogaster                ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0285_6059_Anatidae_Anser_canagicus                       ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0286_6061_Ramphastidae_Ramphastos_ambiguus               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0288_6097_Anatidae_Aythya_valisineria                    ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0289_6295_Haematopodidae_Haematopus_palliatus            ccccatgctc cttatccatg atgcttagga ctcccagcat ggaggcccca gtcatgtgga
+I0361_9545_Sagittariidae_Sagittarius_serpentarius         ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0362_3175_Hydrobatidae_Oceanites_oceanicus               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0363_345610_Mesitornithidae_Mesitornis_unicolor          ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0364_384759_Brachypteraciidae_Atelornis_pittoides        ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0365_384805_Rallidae_Sarothrura_rufa_elizabethae         ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgaa
+I0366_438526_Mesitornithidae_Monias_benschi               ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0367_449184_Leptosomidae_Leptosomus_discolor             ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0368_21_Recurvirostridae_Recurvirostra_americana         ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0369_848_Opisthocomidae_Opisthocomus_hoazin              ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0370_1566_Psittacidae_Psittacus_erithacus                ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0371_1587_Phasianidae_Rollulus_rouloul                   ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0372_1658_Phalacrocoracidae_Phalacrocorax_brasilianus    ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0373_1829_Anhimidae_Chauna_torquata                      ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0374_2419_Phasianidae_Gallus_gallus                      ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0375_2613_Phaethontidae_Phaethon_rubricauda              ccccatcctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0376_2661_Ciconiidae_Leptoptilos_crumeniferus            ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatatgga
+I0377_2841_Melanopareiidae_Melanopareia_maximiliani       ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0378_3087_Heliornithidae_Heliornis_fulica                ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0379_3106_Anhingidae_Anhinga_anhinga                     ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0380_6178_Climacteridae_Climacteris_melanura             ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0382_6875_Casuariidae_Casuarius_bennetti                 ccccatgctc cttatccatg atgctgagga ctcccagcat ggaggcccca gtcatgtgga
+I0383_8723_Psittacidae_Barnardius_zonarius                ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0384_9129_Fregatidae_Fregata_magnificens                 ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0385_9309_Accipitridae_Elanus_leucurus                   ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0386_10701_Pelecanoididae_Pelecanoides_urinatrix         ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0387_12368_Eurylaimidae_Eurylaimus_ochromalus            ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0388_12571_Hemiprocnidae_Hemiprocne_comata               ccccatgctc cttatccatg atgcttagga ctcccagcat ggaggcccca gtcatgtgga
+I0389_14873_Psittacidae_Nestor_meridionalis               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0390_14905_Apterygidae_Apteryx_sp                        ccccatgctc cttatccatg atgctgagga ctcccagcat ggaggcccca gtcatgtgga
+I0391_15014_Pelecanidae_Pelecanus_occidentalis            ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0392_15430_Phoeniculidae_Phoeniculus_purpureus           ccccatgctc cttatccatg atgcttagca ctcccagcat cgaggcccca gtcatgtgga
+I0393_15950_Rynchopidae_Rhynchops_niger                   ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0394_16098_Aegothelidae_Aegotheles_insignis              ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0395_16363_Procellariidae_Pterodroma_externa             ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0396_16818_Eurypygidae_Eurypyga_helias                   ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0397_17790_Ramphastidae_Megalaima_chrysopogon            ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0398_17932_Cuculidae_Centropus_bengalensis               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatatgga
+I0399_18174_Caprimulgidae_Eurostopodus_macrotis           ccccatgctc cttatccatg atgctcagga ttcccagcat ggaggcccca gtcatgtgga
+I0400_19788_Pittidae_Pitta_angolensis                     ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0401_19903_Glareolidae_Glareola_nuchalis                 ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0402_20061_Rostratulidae_Rostratula_benghalensis         ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0403_20547_Pteroclididae_Syrrhaptes_paradoxus            ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0404_21828_Procellariidae_Fulmarus_glacialoides          ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0405_21897_Gruidae_Grus_canadensis                       ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0406_22550_Procellariidae_Puffinus_griseus               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0407_22888_Rallidae_Porphyrio_porphyrio                  ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0408_25293_Alcidae_Uria_aalge                            ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0409_25985_Turnicidae_Turnix_ocellata                    ccccatcctc cttatccatg atgctgagga ctcccagcat ggaggcccca gtcatgtgga
+I0410_52764_Coliidae_Colius_colius                        ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0411_53231_Pteroclididae_Pterocles_bicinctus             ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0412_62853_Hydrobatidae_Pelagodroma_marina               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0413_67124_Coliidae_Colius_indicus                       ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0415_76638_Menuridae_Menura_novaehollandiae              ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0416_76941_Pipridae_Cryptopipo_holochlora                ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0417_82096_Diomedeidae_Phoebastria_nigripes              ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0418_89784_Scopidae_Scopus_umbretta                      ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0419_90368_Aramidae_Aramus_guarauna                      ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0420_730_Ardeidae_Ixobrychus_minutus                     ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0421_1173_Cariamidae_Cariama_cristata                    ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0423_2497_Cuculidae_Cuculus_optatus                      ccccatcctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0424_2923_Cuculidae_Tapera_naevia                        ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0425_2961_Rallidae_Micropygia_schomburgkii               ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0426_2963_Cracidae_Ortalis_motmot                        ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0427_3383_Scolopacidae_Arenaria_interpres                ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0428_3386_Rallidae_Rallus_longirostris                   ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0429_3677_Grallariidae_Myrmothera_campanisona            ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0430_5336_Tyrannidae_Elaenia_flavogaster                 ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0431_5370_Scolopacidae_Limosa_lapponica                  ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0432_5886_Tinamidae_Eudromia_elegans                     ccccatgctc cttatccatg atgctgagca ctcccagcat ggaggcccca gtcatgtgga
+I0433_6296_Gruidae_Balearica_regulorum                    ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0434_6298_Columbidae_Ptilinopus_magnificus               ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0438_345711_Eurylaimidae_Neodrepanis_coruscans           ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0440_10756_D_Ptilonorhynchidae_Ptilonorhynchus_violaceus ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0448_52755_Numididae_Numida_malagris                     ccccatgctc tttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0449_66928_Gaviidae_Gavia_immer                          ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0450_81668_Pandionidae_Pandion_haliaetus                 ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0451_85124_Spheniscidae_Spheniscus_humboldti             ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0452_88784_Tytonidae_Tyto_alba                           ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0453_90121_Struthionidae_Struthio_camelus                ccccatgctc cttatccatg atgctgagga ctcccagcat ggaggcccca gtcatgtgga
+I0454_77230_Cariamidae_Chunga_burmeisteri                 ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0455_1245_Alaudidae_Calandrella_brachydactyla            ccccatgctc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0456_3321_Paridae_Poecile_lugubris                       ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0457_6346_Paradisaeidae_Lophorina_superba                ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I0459_6323_Eurylaimidae_Calyptomena_viridis               ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I0461_HERP_15451_Alligatoridae_Caiman_croccodilus         ccccaggacc cttgtccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I2824_12230_Ptilonorhynchidae_Sericulus_bakeri            ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I2825_21896_Emberizidae_Spizella_arborea                  ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I2826_181173_Pycnonotidae_Pycnonotus_macrotis             ccccatgatc cttatccatg atgctcagca ctcccagcat ggaggcccca gtcatgtgga
+I2827_2685_Pedionomidae_Pedionomus_torquatus              ccccatgctc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+I2828_3250_Bucerotidae_Bucorvus_leadbeateri               ccccatgctc cttatccatg atgctgagga ctcccagcat ggaggcccca gtcatgtgga
+I2829_RIFL_Acanthisittidae_Acanthisitta_chloris           ccccatgatc cttatccatg atgctcagga ctcccagcat ggaggcccca gtcatgtgga
+
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaaa
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaaa
+          agacatgatg actcgctgtt catgccccct cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt caagccccct cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagatcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt caggccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt caagcccccc cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt caagcccccc cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccgcca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt caagcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacga aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cgccccgcca aggagctcgc gattcccaag
+          agacatgatg actcgctgtt catgcccccc cgccccgcca aggagctcgc gattcccaag
+          agacatgatg actcgctgtt caagcccccc cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cctgccagca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacattatg actcgctgtt catgccccct cttgccacca aggagatcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt cataccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggaactcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt cataccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggaggtcgt gattcccaaa
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttggcacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccgcca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaaa
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttaccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttggcacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt cataccccct cttaccacca aggagttcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccgcca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt cataccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttaccgcca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccgc cttgccgcca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cctgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagttcgt gattcccaag
+          agacatgatg actcgctgtt cataccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacataatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttaccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaaa
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgc gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt cataccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt caggctcccc cttgccacca aggagctcgt gattcccaaa
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagttcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg attcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt cataccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt cataccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cgccccgcca aggagctcgc gagtcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt caggcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacataatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt caagcccccc cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt caagcccccc cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt caagccccct cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacaggatg actcgctgtt catgcccttt cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgcccccc cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt caagcccccc cttgccagcc aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt caagcccccc cttgccacca aggaggtcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagctcgt gattcccaag
+          agacatgatg actcgctgtt catgccccct cttgccacca aggagatcgt gattcccaag
+          agacatgatg actcgctgtt caggccccct cttgccacca aggagctcgt gattcccaag
+
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctct
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctcgac
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcttctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcttctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcttctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcttctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcttctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcttctcc
+          tcctctcc
+          tcctctcc
+          tcttctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc
+          tcctctcc

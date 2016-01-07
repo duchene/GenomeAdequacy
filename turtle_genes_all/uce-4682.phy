@@ -1,0 +1,24 @@
+7 151
+'uce-4682_Anolis_carolinensis' gaattgggtt tcactgtggg attaagtaaa taagtcatat taaaatgaca aaatgggtaa
+'uce-4682_Chelonia_mydas'      agattggatt tctaagtagg attaagtaaa taaatcatat taaaatgaca aaatgggtaa
+'uce-4682_Crocodylus_porosus'  agattggatt tcagagtagg attaagtaaa taagtcatat taatatgaca aaatgggtaa
+'uce-4682_Homo_sapiens19'      ggataggatt tcagaggagg attaagtaaa taagtcgtat taaaatgaca aaatgggtaa
+'uce-4682_Pelodiscus_sinensis' agattggatt tctgagtagg attaagtaaa taaatcatat taaaatgaca aaatgggtaa
+'uce-4682_Sphenodon_punctatus' ggattggatt tcagagtagg attaagtaaa taagtcatat taaaatgaca aaatgggtaa
+'uce-4682_Trachemys_scripta'   agattggatt tctgagtagg attaagtaaa taaatcatat taaaatgaca aaatgggtaa
+
+          atagaatata atgtgaaatg aaatgtaaat tggatttcgg caaacacttt tatacagacc
+          atagaatata atgtgaaatg aaatgtaaat tggatttagg caaacacttt tatacagacc
+          atagaatata atgtaaaatg aaatgtaaat tggatttagg caaacacttt tatacagacc
+          atagaatata atgtggaatg aaatgtaaat tggatttagg caaacacttt tatacagtct
+          atagaatata atgtgaaatg aaatgtaaat tggatttagg caaacacttt tatacagacc
+          atagaatata atgtgaaatg aaatgtaaat tggatttagg cgaaagcttc tatacagacc
+          atagaatata atgtgaaatg aaatgtaaat tggatttagg caaacacttt tatacagacc
+
+          tcccatcaaa ccccatcagg cggtttccaa t
+          tcccgtcaaa ccctatcagg ctgcttcaaa t
+          tcccgtcaaa ccctatcaga ctgcttcaaa t
+          taccacccaa ccctatccaa ctgcttcaga t
+          tcccgtcaaa cactatcagg ctgcttcaaa t
+          tcccgtcaaa ccctatcagg ctgcttcaaa c
+          tcccgtcaaa ccctatcagg ctgcttcaaa t

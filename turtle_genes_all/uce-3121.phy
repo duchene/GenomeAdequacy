@@ -1,0 +1,66 @@
+21 139
+'uce-3121_Anolis_carolinensis'         gacttaccgt cacatttttg tgtcacttca ttaaacttgt gtccagctgg gcacttgcac
+'uce-3121_Apalone_ferox'               gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Chelonia_mydas'              gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Chelydra_sp'                 gtcttaccgt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Chrysemys_picta'             gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Crocodylus_porosus'          atcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Deirochelys_reticularia'     gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Dermochelys_coriacea'        gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Gallus_gallus'               gtcttaccat cacatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Graptemys_pseudogeographica' gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Nilssonia_formosa'           gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Pelodiscus_sinensis'         gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Pelomedusa_subrufa1'         gtcttaccgt cacatttttg tgtcacttca ttaaacttgt gtccagctgg gcacttgcac
+'uce-3121_Phrynops_sp'                 gtcttaccgt cacatttttg tgtcacttca ttaagcttgt gtccagctgg gcatttgcac
+'uce-3121_Platemys_platycephala'       gtcttaccgt cacatttttg cgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Platysternon_megacephalum'   gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Podocnemis_erythracephala'   gtcttacctt cacatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Python_molurus'              gacttaccat cgcatttctg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Sphenodon_punctatus'         gtcttaccgt cacatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Testudo_horsfieldii'         gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+'uce-3121_Trachemys_scripta'           gtcttacctt cgcatttttg tgtcacttca ttaaacttgt gtccagctgg gcatttgcac
+
+          tcaaaagatc caacagtatt aatgcaattt cccccttgac agatcccagg gatagcttgg
+          tcaaaagatc caacagtatt aatgcaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccatgac agatcccagg gatggcttgg
+          tcaaaagatc cgacagtgtt aatacaattt cctccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccatgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatgcaattt cccccttgac agatcccagg gatagcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccatgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatgcaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatgcaattt cccccttgac agatcccagg gatagcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatgcaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatgcaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caactgtatt aatgcaattt cctccttgac aaatcccagg gatagcttgg
+          tcaaaagatc caactgtatt aatgcaattt cccccttgac agatcccagg gatagcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccttgac agatcccagg gatggcttgg
+          tcaaaagatc caacagtatt aatacaattt cccccatgac agatcccagg gatggcttgg
+
+          cattcatcca catctagaa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctatca
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca cgtctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctataa
+          cattcatcca catctatgt
+          cattcatcca catctataa
+          cattcatcca catctataa

@@ -1,0 +1,75 @@
+24 154
+'uce-636_Anolis_carolinensis'           agtgttgatc acagtattat aagcagtcag atgcataatt cacaaggctt aatgaatatt
+'uce-636_Apalone_ferox'                 aatgtggatg tcagtattat aagcagtgca atgcataatt cacgaggctt aatgaatatg
+'uce-636_Chelonia_mydas'                aatgtggatc tcagtattat aaacagtcca atgcataatt cacaaggctt aatgaatatt
+'uce-636_Chrysemys_picta'               gatgtggatc tcagtattat aaacagtcca atgcataatt cactaggctt aatgaatatt
+'uce-636_Crocodylus_porosus'            aatgtggatc ttggtattat aagaagttca atgcataatt cacaaggctt aatgaatatt
+'uce-636_Deirochelys_reticularia'       gatgtggatc tcagtattat aaacagtcca atgcataatt cactaggctt aatgaatatt
+'uce-636_Erymnochelys_madagascariensis' aatgtggatc atggcattat aagcagtaca atgcataatt cataagactt aatgaatatt
+'uce-636_Gallus_gallus'                 actgtggatc tcagtgttac aagcagtgca atgcataatt cacaaggctt aatgaatatt
+'uce-636_Geochelone_pardalis'           aatgtggatc tcagtattat aaacagttca atgcataatt cacaaggcta aatgaatatt
+'uce-636_Gopherus_berlandieri'          aatgtggatc tcagtattat aaacagttca atgcataatt cacaaggcta aatgaatatt
+'uce-636_Graptemys_pseudogeographica'   gatgtggatc tcagtattat aaacagtcca atgcataatt cactaggctt aatgaatatt
+'uce-636_Homo_sapiens19'                aatgtggatc tcagtattat aagcaggcta atgcataatt catgaggctt aatgaatatt
+'uce-636_Lepidochelys_olivacea'         aatgtggatc tcagtattat aaacagtcca atgcataatt cacaaggctt aatgaatatt
+'uce-636_Lissemys_punctata'             aatgtggaca tcagtattat aagcagtgca atgcataatt cacgaggcgt aatgaatatg
+'uce-636_Pelodiscus_sinensis'           aatgtggatg tcagtattat aagcagtgca atgcataatt cacgaggctt aatgaatatg
+'uce-636_Pelomedusa_subrufa1'           aatgtggatc atggtattat aagcagtaca atgcataatt cataaggctt aatgaatatt
+'uce-636_Pelusios_castaneus'            aatgtggatc atggtattat aagcagtaca atgcataatt cataaggctt aatgaatatt
+'uce-636_Phrynops_sp'                   aatgtggatc ttggtattat aagcagtcca atgcataatt catgaggctt aatgaatatt
+'uce-636_Platysternon_megacephalum'     aatgtggatc tcagtattat aaacagtcca atgcataatt cacaaggctt aatgaatatt
+'uce-636_Python_molurus'                agtgttgatc acagtattat aagcagttgg atgcataatt cacaaggttt aatgaatatt
+'uce-636_Sphenodon_punctatus'           aatgtggatc tcagtattat aaacactcaa atgcataatt cacgaggctt aatgaatatt
+'uce-636_Sternotherus_minor'            aatgtggatc tcagtattat aaacagtcca atgcataatt cacaaggctt aatgaatatt
+'uce-636_Testudo_horsfieldii'           aatgtggatc tcagtattat aaacagttca atgcataatt cacaaggcta aatgaatatt
+'uce-636_Trachemys_scripta'             gatgtggatc tcagtattat aaacagtcca atgcataatt cactaggctt aatgaatatt
+
+          ccaattcatg acagccaact ggctccatag gtcacacctc ctagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggttccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggttccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacgcctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacgcctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggttccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctctt ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccgtag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctctatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc tcagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacacctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggctccatag gtcacgcctc ccagtctcat ataaataaag
+          ccaattcatg acagccaact ggttccatag gtcacacctc ccagtctcat ataaataaag
+
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgaggtac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagtat accagctgaa ccaa
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccaa
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgaggtac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccaa
+          aatgagattc tggaaagcat accagctgaa ccaa
+          aatgaggtac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatat tggaaagtat accagctgaa cccg
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca
+          aatgagatac tggaaagcat accagctgaa ccca

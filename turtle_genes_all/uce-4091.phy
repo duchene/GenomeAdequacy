@@ -1,0 +1,33 @@
+10 167
+'uce-4091_Anolis_carolinensis' ggttagagtg ttttcttaag gaaggctggg ccctcggtct taatcagcca ataaattatt
+'uce-4091_Chrysemys_picta'     tgttagagtg ttttcctaag gaaggctggg cccccagtct taatcagcca ataaattatt
+'uce-4091_Crocodylus_porosus'  tgttagagtg ttttcttaag gaaggctggg ccctcagtct taatcagcca ataaattatt
+'uce-4091_Gallus_gallus'       tgttagactg ttttcttaag gaaggctggg ccctcagtct taatcagcca ataaattatt
+'uce-4091_Homo_sapiens19'      tgttagaatg ttttcttaag gaaggctggg tcctcagtct taatcagcca ataaattatt
+'uce-4091_Pelodiscus_sinensis' tgttagagtg ttttcttaag gaaggttggg cccccagtct taatcagcca ataaattatt
+'uce-4091_Python_molurus'      tgttagagtg ttttcttaag aaaggccgga ccctcagtcc taatcagcca ataaattatt
+'uce-4091_Sphenodon_punctatus' tgttagagtg ttttcttaag gaaggctggg ccctcagtct taatcagcca ataaattatt
+'uce-4091_Testudo_horsfieldii' tgttagagtg ttttcttaag gaaggctggg cccccagtct taatcagcca ataaattatt
+'uce-4091_Trachemys_scripta'   tgttagagtg ttttcctaag gaaggctggg cccccagtct taatcagcca ataaattatt
+
+          tcctgcaatt acattaaata gaaaattatc ttcaaattgg gaatgttaat tgaaaatcaa
+          tcctgcaatt acattaaata gaaaattatc ttcaaattgg gaatgttaat tgaaaatcaa
+          tcctgcaatt acattaaata gaaaattatc ttcaaattgg gaatgttaat tgaaaatcaa
+          tcctgcaatt acattaaata gaaaattatc ttcaaattgg gaatgttaat tgaaaatcaa
+          tcctgcaatt acattaaata gaaaattatc ttcaaatggg gagtgttaat tgaaaatcaa
+          tcctgcaatt acattaaata gaaaattatc ttcaaattgg gaatgttaat tgaaaatcaa
+          tcctgcaatt atattaaata gaaaattatc ttcaaattgg gaatgttaat tgaaaatcaa
+          tcctgcaatt acattaaata gaaaattatc ttcaaattgg gaatgttaat tgaaaatcaa
+          tcctgcaatt acattaaata gaaaattatc ttcaaattgg gaatgttaat tgaaaatcaa
+          tcctgcaatt acattaaata gaaaattatc ttcaaattgg gaatgttaat tgaaaatcaa
+
+          aattcagagt gaagtttaga aattacatgc tgaatataat tagtctg
+          aattcagagt gaagtttaga aattacatgc tgaatataat tagtcta
+          aattcagagt gaagtttaga aattacatgc tgaatataat tagtcta
+          aattcagact gaagtttaga aattacatgc tgaatataat tagtcta
+          aattcagagg gaagtttaga aattacacgc tgaatacaat tagtgag
+          aattcagagt gaagtttaga aattacatgc tgaatataat tagtcta
+          aattcagagt gaagtttaga aattacatgc tgaatataat tagcctg
+          aattcagagt gaagtttaga aattacatgc tgaatataat tagactg
+          aattcagagt gaagtttaga aattacatgc tgaatataat tagtcta
+          aattcagagt gaagtttaga aattacatgc tgaatataat tagtcta

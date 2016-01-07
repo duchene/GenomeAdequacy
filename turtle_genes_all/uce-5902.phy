@@ -1,0 +1,152 @@
+37 181
+'uce-5902_Anolis_carolinensis'           aataagactt actctgtgtt ggagctaaca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Apalone_ferox'                 aataagactt attctatgtt ggagctatga aatctttatc agtacttcaa ccattctgct
+'uce-5902_Carettochelys_insculpta'       aataagactt attctatgtt ggagctaaca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Chelonia_mydas'                aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Chelydra_sp'                   aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Chrysemys_picta'               aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Clemmys_marmorata'             aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Crocodylus_porosus'            aataagactt attctatgtt ggagctaaca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Cyclemys_dentata'              aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Deirochelys_reticularia'       aataagactt attctatgtt ggagctaaca aatttttatc agtacttcag ccattctgct
+'uce-5902_Dermatemys_sp'                 aataagactt attctgtgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Erymnochelys_madagascariensis' aataagactt attctaggtt ggagctagca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Gallus_gallus'                 aataggactt attctatgtt ggagccatca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Geochelone_pardalis'           aataagactt attctatgtt ggcgctaaca aatttttatc tgtacttcaa ccattctgct
+'uce-5902_Geoemyda_spengleri'            aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Gopherus_berlandieri'          aataagactt attctatgtt ggcactaaca aatttttatc tgtacttcaa ccattctgct
+'uce-5902_Graptemys_pseudogeographica'   aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Homo_sapiens19'                aataagactt attctatgtt ggagctaaca aatctttatc agtacttcaa ccactctgct
+'uce-5902_Kinosternon_flavescens'        aataagactt attctatgtt ggagttaaca aatttttatc agtacttcaa ccattctcct
+'uce-5902_Lepidochelys_olivacea'         aataagactt attctatgtt agagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Lissemys_punctata'             aataagactt attctatgtt ggagctatga aatctttatc agtacttcaa ccattctgct
+'uce-5902_Nilssonia_formosa'             aataagactt attctatgtt ggagctatga aatctttatc agtacttcaa ccattctgct
+'uce-5902_Pelodiscus_sinensis'           aataagactt attctatgtt ggagctatga aatctttatc agtacttcaa ccattctgct
+'uce-5902_Pelomedusa_subrufa1'           aataagactt attctaggtt ggagctaaca aatctttatc agtacttcaa ccattccgct
+'uce-5902_Pelusios_castaneus'            aataagactt attctaggtt ggagctaaca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Phrynops_sp'                   aataagactt attctgtgtt ggagctagca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Platemys_platycephala'         aataagactt attctgtgtt ggagctagca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Platysternon_megacephalum'     aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Podocnemis_erythracephala'     aataagactt attctaggtt ggagctagca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Python_molurus'                aataagactt actctgtgtt ggagccaaca aatctttatc ggtacttcaa ccattcttct
+'uce-5902_Rhinoclemmys_punctularia'      aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccactctgct
+'uce-5902_Sphenodon_punctatus'           aataaagctt attctatgtt ggagctaaca aatctttatc agtacttcaa ccattctgct
+'uce-5902_Staurotypus_triporcatus'       aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctcct
+'uce-5902_Sternotherus_minor'            aataagactt attctatatt ggagctaaca aatttttatc agtacttcaa ccattctcct
+'uce-5902_Terrapene_ornata'              aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+'uce-5902_Testudo_horsfieldii'           aataagactt attctatgtt ggcgctaaca aatttttatc tgtacttcag ccattctgct
+'uce-5902_Trachemys_scripta'             aataagactt attctatgtt ggagctaaca aatttttatc agtacttcaa ccattctgct
+
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc ctttcatata
+          tatgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tatatggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tatgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc ctttcatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaattaatcc cttacatata
+          tacgtggcct caatgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc ttttcatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacttggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tgcgtggcct cattgttaag attatgcctt tcatctatgg gatctaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tatgtggcct cattgttaag attatgcctt tcatctatgg aaaccaatcc ctttcatata
+          tacgtggcct cattgttatg attatgcctt tcatctatgg gaactaatcc cttacatata
+          tatatggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tatgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc tttacatata
+          tatgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tatgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc ctcacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct caatgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tatgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc ctttcatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc ctttcatata
+          tatgtggtct cattgttatg attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttatg attatgcctt tcatctatgg gaactaatcc cttacatata
+          tatgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+          tacgtggcct cattgttaag attatgcctt tcatctatgg gaactaatcc cttacatata
+
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttatga aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttatga aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcca acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttatga aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aaagtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcca acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtgta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttatga aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caatttcagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttaaaa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttaaaa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aaagtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caactttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagcat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttatga aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttataa aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+          caattttagc aagcttatga aatgtgtatt aaagcagtat tacttgtcta acaataaaaa
+
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g
+          g

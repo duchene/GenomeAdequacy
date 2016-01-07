@@ -1,0 +1,80 @@
+15 282
+'uce-3423_Anolis_carolinensis'     ttttcacaaa atctttcata tgcagagttc cgtgccattg cggcctctcc gaggttgtca
+'uce-3423_Apalone_ferox'           ttttcacaaa ctctttcata tatgtagttt catgccagta atgcctctca aaggttgtca
+'uce-3423_Chelonia_mydas'          ttttcacaaa atctttcata tatgtagctt catgccagta atgcctctca aaggttctca
+'uce-3423_Chrysemys_picta'         ttttcacaaa atctttcata tatgtagttt catgccagta atgcctctca aaggttgtca
+'uce-3423_Crocodylus_porosus'      ttctcccaaa atctttcata tgtacagttt catgccagta acatctctca aaggttgtca
+'uce-3423_Deirochelys_reticularia' ttttcacaaa atctttcata tatgtagttt catgccagta atgcctctca aaggttgtca
+'uce-3423_Dermochelys_coriacea'    ttttcacaaa atctttcata tatgtagttt catgccagta atgcctctca aaggttctca
+'uce-3423_Gallus_gallus'           ttttcacaaa gtctttcata cgtatggttt catgtcggta atgcctctca aaggttgtca
+'uce-3423_Homo_sapiens19'          tttttacaaa acccttcaaa tggatcttct ggacctgtta tgccttcttt gggcttgtca
+'uce-3423_Pelodiscus_sinensis'     ttttcacaaa ctctttcata tatgtagttt catgccagta atgcctctca aaggttgtca
+'uce-3423_Phrynops_sp'             ttttcacaaa atctttcata tatatagttt catgccagta atgcctctca aaggttgtca
+'uce-3423_Sphenodon_punctatus'     ttttcacaaa atctttcata tgcatagttt catgccagta atgcctctca gaggttgtca
+'uce-3423_Staurotypus_triporcatus' ttttcacaaa atctttcata tatgtagttt catgcccgta atgcctctca aaggttctca
+'uce-3423_Testudo_horsfieldii'     ttttcacaaa atctttcgca tatgtagttt catgccagta atgcctctca aaggttgtca
+'uce-3423_Trachemys_scripta'       ttttcgcaaa atctttcata tatgtagttt catgccagta atgcctctca aaggttgtca
+
+          aatattaatt tttttaaatt tggtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt cagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+          aatattaatt tttttaaatt tagtcccttg ctaagctaca aatattcatg tttaacacca
+
+          agtagcagtt caggggctga caacagtatg taccttctga atgatgcata gaaagcagca
+          agtagcagtt caggggctgc caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacactatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcatg gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga cgacggtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctgc caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcata gaaagcagca
+          agtagcagtt caggggctga caacagtatg taccttttga atgatgcata gaaagcagca
+
+          gttagcacaa agacaaagcc accagattgg tctcagggaa acccggtgct tgaatttttc
+          gtgatcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttatcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttatcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttagcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttatcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttatcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttagcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttagcacaa agaaaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gtgatcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttatcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttagcacaa agacaaagcc accagattgg tctcaaggaa acccagtgtc tgaatttttc
+          gttatcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+          gttatcacaa agacaaagcc accagattgg tctcagggaa acccagtgcc tgaatttttc
+          gttatcacaa agacaaagcc accagattgg tctcagggaa acccagtgtc tgaatttttc
+
+          atgactcctc cagcacttaa agaataagaa actggctact tc
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgattcctc cagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataaaaa actggctact ag
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataagaa accggctact ac
+          atgactcctc tagcacttaa agaataagaa actggctact ac
+          atgactcctc tagcacttaa agaataagaa actggctact ac
