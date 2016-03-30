@@ -1,0 +1,19 @@
+schemes <- c("nulldataGTR", "nulldataJC", "underparamdataGTR", "underparamdataJC", "misaligndata0.5", "basecompdata.18")
+
+simres <- matrix(0, nrow = 100, ncol = 6)
+colnames(simres) <- schemes
+rownames(simres) <- c("multinomial", "chisq", "homoplasy", "meanbrsup", "CIbrsup", "delta", "trlen", "topodif", "trlendif")
+rtind <- seq(2, 14, 2)
+
+for(i in 1:length(schemes)){
+
+      setwd(schemes[i])
+      resfiles <- grep("[.]Rdata", dir(), value = T)
+      for(j in 1:length(resfiles)){
+            load(resfiles[j])
+            for(k in 1:7){
+                  if(rT[[rtind[k]]] < 0.05 | rT[[rtind[k]]] > 0.95) simres[k, i] <- simres[k, i] + 1
+            }
+      }
+      setwd("..")
+}

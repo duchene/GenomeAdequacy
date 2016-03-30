@@ -1,0 +1,38 @@
+require(apTreeshape)
+require(phangorn)
+source("../R/prop.dist.R")
+source("../R/stemmy.R")
+nulltrs <- read.tree("../simulations/nulltrees.tre")
+longtrs <- read.tree("../simulations/longesttrees.tre")
+load("../simulations/hetdata_18.Rdata")
+hettrs <- lapply(het_18, function(x) x[[1]])
+folders <- c("nulldataGTR","nulldataJC","underparamdataGTR","underparamdataJC","misaligndata0.5","basecompdata.18")
+accuracymat <- matrix(NA, ncol = 6, nrow = 100)
+precisionmat <- matrix(NA, ncol = 6, nrow = 100)
+steminessmat <- matrix(NA, ncol = 6, nrow = 100)
+imbalmat <- matrix(NA, ncol = 6, nrow = 100)
+
+for(i in 1:length(folders)){
+
+      setwd(folders[i])
+      if(i != 5){
+      	   resfilesind <- sapply(strsplit(grep("Rdata", dir(), value = T), "[.]"), function(x) x[1])
+      } else {
+      	   resfilesind <- sapply(strsplit(grep("Rdata", dir(), value = T), "[.]"), function(x) x[2]) 
+      }
+      resfilesind <- sapply(strsplit(resfilesind, "_"), function(x) tail(x, 1))
+      resfiles <- grep("Rdata", dir(), value = T)[order(as.numeric(resfilesind))]
+      for(j in 1:100){
+      	    load(resfiles[j])
+	    if(i == 6){
+	    	 accuracymat[j, i] <- prop.dist(hettrs[[j]], rT[[15]])
+      	    } else {
+	      	 accuracymat[j, i] <- prop.dist(nulltrs[[j]], rT[[15]])
+	    }
+	    precisionmat[j, i] <- rT[[7]]
+	    steminessmat[j, i] <- stemmy(rT[[15]])
+	    imbalmat[j, i] <- colless.test(as.treeshape(rT[[15]], model = "yule"))$statistic
+      }
+      setwd("..")
+
+}
