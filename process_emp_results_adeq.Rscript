@@ -1,0 +1,39 @@
+require(ips)
+require(phangorn)
+require(apTreeshape)
+source("R/stemmy.R")
+folders <- c("bird_genes_all", "mammal_genes_all", "turtle_genes_all")
+empirical_adequacy_binary <- list()
+empirical_adequacy_raw <- list()
+for(j in 1:3){
+setwd(folders[j])
+resfiles <- grep("[.]Rdata", dir(), value = T)
+delta_trlen_chisq_passfail <- vector()
+teststats_pvals_resultmetrics_ranks <- matrix(NA, ncol = 25, nrow = length(resfiles))
+colnames(teststats_pvals_resultmetrics_ranks) <- c("empirical.multlik", "multlik.p.value", "empirical.chisq", "chisq.p.value", "empirical.homoplasy", "homoplasy.p.value", "empirical.mean.branch.sup", "mean.branch.sup.p.value", "empirical.CI.branch.sup", "CI.branch.sup.p.value", "empirical.delta", "delta.p.value", "empirical.tree.length", "tree.length.p.value", "imbalance", "stemminess", "meantopdist", "gc", "segsites", "genelen", "alphaparam", "chisqrank", "deltarank", "trlenrank", "meanrank")
+rownames(teststats_pvals_resultmetrics_ranks) <- resfiles
+
+for(i in 1:length(resfiles)){
+      load(resfiles[i])
+      delta_trlen_chisq_passfail[i] <- 0
+      if((rT[[4]] > 0.05 && rT[[4]] < 0.95) && (rT[[12]] > 0.05 && rT[[12]] < 0.95) && (rT[[14]] > 0.05 && rT[[14]] < 0.95)) delta_trlen_chisq_passfail[i] <- 1
+      gene <- read.dna(strsplit(resfiles[i], "results")[[1]][1])
+      gc <- GC.content(gene)
+      genelen <- ncol(gene)
+      segsites <- length(pis(gene, what = "ind"))
+      teststats_pvals_resultmetrics_ranks[i, ] <- c(unlist(rT[1:14]), colless(as.treeshape(rT[[15]], model = "yule"), norm = "yule"), stemmy(rT[[15]]), NA, gc, segsites, genelen, rT[[18]], rT[[4]], rT[[12]], rT[[14]], NA)
+}
+teststats_pvals_resultmetrics_ranks[, 24] <- rank(abs(teststats_pvals_resultmetrics_ranks[, 24] - 0.5))
+teststats_pvals_resultmetrics_ranks[, 23] <- rank(abs(teststats_pvals_resultmetrics_ranks[, 23] - 0.5))
+teststats_pvals_resultmetrics_ranks[, 22] <- rank(-teststats_pvals_resultmetrics_ranks[, 22])
+teststats_pvals_resultmetrics_ranks[, 25] <- apply(teststats_pvals_resultmetrics_ranks, 1, function(x) mean(c(x[24], x[23], x[22])))
+teststats_pvals_resultmetrics_ranks <- teststats_pvals_resultmetrics_ranks[order(teststats_pvals_resultmetrics_ranks[, 25]),]
+empirical_adequacy_binary[[j]] <- delta_trlen_chisq_passfail
+names(empirical_adequacy_binary[[j]]) <- resfiles
+empirical_adequacy_raw[[j]] <- teststats_pvals_resultmetrics_ranks
+setwd("..")
+
+}
+
+save(empirical_adequacy_binary, file = "empirical_adequacy_binary.Rdata")
+save(empirical_adequacy_raw, file = "empirical_adequacy_raw.Rdata")

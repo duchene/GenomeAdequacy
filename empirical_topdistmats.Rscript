@@ -1,0 +1,21 @@
+require(phangorn)
+folders <- c("bird_genes_all", "mammal_genes_all", "turtle_genes_all")
+topdistmats <- list()
+
+for(i in 1){
+      setwd(folders[i])
+      files <- grep("Rdata", dir(), value = T)
+      trees <- lapply(files, function(x){ load(x)
+rT[[15]]})
+      topdistmat <- matrix(NA, ncol = length(trees), nrow = length(trees))
+      colnames(topdistmat) <- files
+      rownames(topdistmat) <- files
+      for(k in 1:length(trees)){
+      	    for(j in k:length(trees)){
+      	    	  topdistmat[j, k] <- dist.topo(trees[[k]], trees[[j]])
+            }
+      }
+      topdistmats[[i]] <- topdistmat
+      names(topdistmats)[i] <- folders[i]
+      setwd("..")
+}

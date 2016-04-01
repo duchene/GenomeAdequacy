@@ -1,9 +1,0 @@
-load("result_metrics.Rdata")
-
-pdf("result_metrics_boxplot.pdf", height = 8, width = 4)
-par(mfrow = c(4,1))
-boxplot(accuracymat, use.cols = T, xlab = "Simulation model", ylab = "Distance between sim and est", main = "Accuracy")
-boxplot(precisionmat, use.cols = T, xlab = "Simulation model", ylab = "Node support", main = "Precision")
-boxplot(steminessmat, use.cols = T, xlab = "Simulation model", ylab = "Stemminess", main = "Stemminess")
-boxplot(imbalmat, use.cols = T, xlab = "Simulation model", ylab = "Colless Index", main = "Imbalance")
-dev.off()

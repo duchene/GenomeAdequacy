@@ -1,0 +1,56 @@
+library(phangorn)
+library(apTreeshape)
+source("../R/stemmy.R")
+source("../R/prop.dist.R")
+load("../empirical_adequacy_binary.Rdata")
+datamat_prec <- matrix(NA, ncol = 6, nrow = 1904)
+colnames(datamat_prec) <- c("birds_pass", "birds_fail", "mammals_pass", "mammals_fail", "turtles_pass", "turtles_fail")
+datamat_dist <- matrix(NA, ncol = 6, nrow = 1904)
+colnames(datamat_dist) <- c("birds_pass", "birds_fail", "mammals_pass", "mammals_fail", "turtles_pass", "turtles_fail")
+datamat_imba <- matrix(NA, ncol = 6, nrow = 1904)
+colnames(datamat_imba) <- c("birds_pass", "birds_fail", "mammals_pass", "mammals_fail", "turtles_pass", "turtles_fail")
+datamat_stem <- matrix(NA, ncol = 6, nrow = 1904)
+colnames(datamat_stem) <- c("birds_pass", "birds_fail", "mammals_pass", "mammals_fail", "turtles_pass", "turtles_fail")
+
+folders <- c("../bird_genes_all", "../mammal_genes_all", "../turtle_genes_all")
+seqpass <- seq(1, 5, 2)
+seqfail <- seq(2, 6, 2)
+
+for(i in 1:3){
+      setwd(folders[i])
+      trees <- list()
+      for(j in 1:length(empirical_adequacy_binary[[i]])){
+      	    load(names(empirical_adequacy_binary[[i]])[j])
+	    prec <- rT[[7]]
+	    imba <- colless(as.treeshape(rT[[15]], model = "yule"), norm = "yule")
+	    stem <- stemmy(rT[[15]])
+	    trees[j] <- rT[15]
+	    if(empirical_adequacy_binary[[i]][j] == 1){
+	    	datamat_prec[which(is.na(datamat_prec[,seqpass[i]]))[1], seqpass[i]] <- prec
+	    	datamat_imba[which(is.na(datamat_imba[,seqpass[i]]))[1], seqpass[i]] <- imba
+	    	datamat_stem[which(is.na(datamat_stem[,seqpass[i]]))[1], seqpass[i]] <- stem
+            } else {
+	      	datamat_prec[which(is.na(datamat_prec[,seqfail[i]]))[1], seqfail[i]] <- prec
+	    	datamat_imba[which(is.na(datamat_imba[,seqfail[i]]))[1], seqfail[i]] <- imba
+	    	datamat_stem[which(is.na(datamat_stem[,seqfail[i]]))[1], seqfail[i]] <- stem		
+      	    }
+
+      }
+      topdistmat <- matrix(NA, ncol = length(trees), nrow = length(trees))
+      for(k in 1:length(trees)){
+            for(j in k:length(trees)){
+            	  topdistmat[j, k] <- dist.topo(trees[[k]], trees[[j]])
+            }
+      }
+      for(j in 1:length(empirical_adequacy_binary[[i]])){
+
+      	    if(empirical_adequacy_binary[[i]][j] == 1){
+	    	datamat_dist[which(is.na(datamat_dist[,seqpass[i]]))[1], seqpass[i]] <- mean(c(topdistmat[j, ], topdistmat[, j]), na.rm = T)
+	    } else {
+	      	datamat_dist[which(is.na(datamat_dist[,seqfail[i]]))[1], seqfail[i]] <- mean(c(topdistmat[j, ], topdistmat[, j]), na.rm = T)
+	    }
+
+      }
+      setwd("../results/")
+
+}
