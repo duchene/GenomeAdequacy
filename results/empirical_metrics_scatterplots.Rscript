@@ -1,0 +1,408 @@
+load("../empirical_adequacy_raw.Rdata")
+
+####### 1. Topological distance #######
+
+## Birds ##
+
+pdf("empirical_topodistance.pdf", height = 4, useDingbats = F, width = 12)
+par(mfrow = c(1, 3))
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 17], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Mean topological distance from other genes", main = "Birds")
+abline(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 17], method = "spearman")
+legend(min(empirical_adequacy_raw[[1]][, 25]), max(empirical_adequacy_raw[[1]][, 17]), legend = c("Chi-squared", "Delta", "Tree length", "Mean", paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), col = c("red", "green", "blue", "black", NA), lty = 1)
+
+## Mammals ##
+
+plot(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 17], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Mean topological distance from other genes", main = "Mammals")
+abline(lm(empirical_adequacy_raw[[2]][, 17] ~ empirical_adequacy_raw[[2]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[2]][, 17] ~ empirical_adequacy_raw[[2]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[2]][, 17] ~ empirical_adequacy_raw[[2]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[2]][, 17] ~ empirical_adequacy_raw[[2]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[2]][, 17] ~ empirical_adequacy_raw[[2]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[2]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[2]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 17], method = "spearman")
+legend(min(empirical_adequacy_raw[[2]][, 25]), max(empirical_adequacy_raw[[2]][, 17]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+
+## Turtles ##
+
+plot(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 17], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Mean topological distance from other genes", main = "Turtles")
+abline(lm(empirical_adequacy_raw[[3]][, 17] ~ empirical_adequacy_raw[[3]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[3]][, 17] ~ empirical_adequacy_raw[[3]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[3]][, 17] ~ empirical_adequacy_raw[[3]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[3]][, 17] ~ empirical_adequacy_raw[[3]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[3]][, 17] ~ empirical_adequacy_raw[[3]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[3]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[3]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 17], method = "spearman")
+legend(min(empirical_adequacy_raw[[3]][, 25]), max(empirical_adequacy_raw[[3]][, 17]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+dev.off()
+
+####### 2. Node support #######
+
+## Birds ##
+
+pdf("empirical_precision.pdf", height = 4, useDingbats = F, width = 12)
+par(mfrow = c(1, 3))
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 7], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Mean node support", main = "Birds")
+abline(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 7], method = "spearman")
+legend(min(empirical_adequacy_raw[[1]][, 25]), max(empirical_adequacy_raw[[1]][, 7]), legend = c("Chi-squared", "Delta", "Tree length", "Mean", paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), col = c("red", "green", "blue", "black", NA), lty = 1)
+
+## Mammals ##
+
+plot(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 7], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Mean node support", main = "Mammals")
+abline(lm(empirical_adequacy_raw[[2]][, 7] ~ empirical_adequacy_raw[[2]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[2]][, 7] ~ empirical_adequacy_raw[[2]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[2]][, 7] ~ empirical_adequacy_raw[[2]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[2]][, 7] ~ empirical_adequacy_raw[[2]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[2]][, 7] ~ empirical_adequacy_raw[[2]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[2]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[2]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 7], method = "spearman")
+legend(min(empirical_adequacy_raw[[2]][, 25]), max(empirical_adequacy_raw[[2]][, 7]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+
+
+## Turtles ##
+
+plot(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 7], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Mean node support", main = "Turtles")
+abline(lm(empirical_adequacy_raw[[3]][, 7] ~ empirical_adequacy_raw[[3]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[3]][, 7] ~ empirical_adequacy_raw[[3]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[3]][, 7] ~ empirical_adequacy_raw[[3]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[3]][, 7] ~ empirical_adequacy_raw[[3]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[3]][, 7] ~ empirical_adequacy_raw[[3]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[3]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[3]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 7], method = "spearman")
+legend(min(empirical_adequacy_raw[[3]][, 25]), max(empirical_adequacy_raw[[3]][, 7]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+dev.off()
+
+####### 3. Imbalance #######
+
+## Birds ##
+
+pdf("empirical_imbalance.pdf", height = 4, useDingbats = F, width = 12)
+par(mfrow = c(1, 3))
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 15], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Topological imbalance", main = "Birds")
+abline(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 15], method = "spearman")
+legend(min(empirical_adequacy_raw[[1]][, 25]), max(empirical_adequacy_raw[[1]][, 15]), legend = c("Chi-squared", "Delta", "Tree length", "Mean", paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), col = c("red", "green", "blue", "black", NA), lty = 1)
+
+## Mammals ##
+
+plot(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 15], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Topological imbalance", main = "Mammals")
+abline(lm(empirical_adequacy_raw[[2]][, 15] ~ empirical_adequacy_raw[[2]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[2]][, 15] ~ empirical_adequacy_raw[[2]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[2]][, 15] ~ empirical_adequacy_raw[[2]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[2]][, 15] ~ empirical_adequacy_raw[[2]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[2]][, 15] ~ empirical_adequacy_raw[[2]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[2]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[2]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 15], method = "spearman")
+legend(min(empirical_adequacy_raw[[2]][, 25]), max(empirical_adequacy_raw[[2]][, 15]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+
+
+## Turtles ##
+
+plot(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 15], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Topological imbalance", main = "Turtles")
+abline(lm(empirical_adequacy_raw[[3]][, 15] ~ empirical_adequacy_raw[[3]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[3]][, 15] ~ empirical_adequacy_raw[[3]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[3]][, 15] ~ empirical_adequacy_raw[[3]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[3]][, 15] ~ empirical_adequacy_raw[[3]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[3]][, 15] ~ empirical_adequacy_raw[[3]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[3]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[3]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 15], method = "spearman")
+legend(min(empirical_adequacy_raw[[3]][, 25]), max(empirical_adequacy_raw[[3]][, 15]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+dev.off()
+
+####### 4. Stemminess #######
+
+## Birds ##
+
+pdf("empirical_stemminess.pdf", height = 4, useDingbats = F, width = 12)
+par(mfrow = c(1, 3))
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 16], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Stemminess", main = "Birds")
+abline(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 16], method = "spearman")
+legend(min(empirical_adequacy_raw[[1]][, 25]), max(empirical_adequacy_raw[[1]][, 16]), legend = c("Chi-squared", "Delta", "Tree length", "Mean", paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), col = c("red", "green", "blue", "black", NA), lty = 1)
+
+## Mammals ##
+
+plot(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 16], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Stemminess", main = "Mammals")
+abline(lm(empirical_adequacy_raw[[2]][, 16] ~ empirical_adequacy_raw[[2]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[2]][, 16] ~ empirical_adequacy_raw[[2]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[2]][, 16] ~ empirical_adequacy_raw[[2]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[2]][, 16] ~ empirical_adequacy_raw[[2]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[2]][, 16] ~ empirical_adequacy_raw[[2]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[2]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[2]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 16], method = "spearman")
+legend(min(empirical_adequacy_raw[[2]][, 25]), max(empirical_adequacy_raw[[2]][, 16]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+
+
+## Turtles ##
+
+plot(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 16], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Stemminess", main = "Turtles")
+abline(lm(empirical_adequacy_raw[[3]][, 16] ~ empirical_adequacy_raw[[3]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[3]][, 16] ~ empirical_adequacy_raw[[3]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[3]][, 16] ~ empirical_adequacy_raw[[3]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[3]][, 16] ~ empirical_adequacy_raw[[3]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[3]][, 16] ~ empirical_adequacy_raw[[3]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[3]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[3]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 16], method = "spearman")
+legend(min(empirical_adequacy_raw[[3]][, 25]), max(empirical_adequacy_raw[[3]][, 16]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+dev.off()
+
+
+#######  5. Tree length #######
+
+## Birds ##
+
+pdf("empirical_treelength.pdf", height = 4, useDingbats = F, width = 12)
+par(mfrow = c(1, 3))
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 13], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Tree length", main = "Birds")
+abline(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 13], method = "spearman")
+legend(min(empirical_adequacy_raw[[1]][, 25]), max(empirical_adequacy_raw[[1]][, 13]), legend = c("Chi-squared", "Delta", "Tree length", "Mean", paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), col = c("red", "green", "blue", "black", NA), lty = 1)
+
+## Mammals ##
+
+plot(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 13], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Tree length", main = "Mammals")
+abline(lm(empirical_adequacy_raw[[2]][, 13] ~ empirical_adequacy_raw[[2]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[2]][, 13] ~ empirical_adequacy_raw[[2]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[2]][, 13] ~ empirical_adequacy_raw[[2]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[2]][, 13] ~ empirical_adequacy_raw[[2]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[2]][, 13] ~ empirical_adequacy_raw[[2]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[2]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[2]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 13], method = "spearman")
+legend(min(empirical_adequacy_raw[[2]][, 25]), max(empirical_adequacy_raw[[2]][, 13]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+
+
+## Turtles ##
+
+plot(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 13], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Tree length", main = "Turtles")
+abline(lm(empirical_adequacy_raw[[3]][, 13] ~ empirical_adequacy_raw[[3]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[3]][, 13] ~ empirical_adequacy_raw[[3]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[3]][, 13] ~ empirical_adequacy_raw[[3]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[3]][, 13] ~ empirical_adequacy_raw[[3]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[3]][, 13] ~ empirical_adequacy_raw[[3]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[3]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[3]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 13], method = "spearman")
+legend(min(empirical_adequacy_raw[[3]][, 25]), max(empirical_adequacy_raw[[3]][, 13]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+dev.off()
+
+####### 6. GC content #######
+
+## Birds ##
+
+pdf("empirical_gccontent.pdf", height = 4, useDingbats = F, width = 12)
+par(mfrow = c(1, 3))
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 18], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "GC content", main = "Birds")
+abline(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 18], method = "spearman")
+legend(min(empirical_adequacy_raw[[1]][, 25]), max(empirical_adequacy_raw[[1]][, 18]), legend = c("Chi-squared", "Delta", "Tree length", "Mean", paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), col = c("red", "green", "blue", "black", NA), lty = 1)
+
+## Mammals ##
+
+plot(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 18], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "GC content", main = "Mammals")
+abline(lm(empirical_adequacy_raw[[2]][, 18] ~ empirical_adequacy_raw[[2]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[2]][, 18] ~ empirical_adequacy_raw[[2]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[2]][, 18] ~ empirical_adequacy_raw[[2]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[2]][, 18] ~ empirical_adequacy_raw[[2]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[2]][, 18] ~ empirical_adequacy_raw[[2]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[2]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[2]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 18], method = "spearman")
+legend(min(empirical_adequacy_raw[[2]][, 25]), max(empirical_adequacy_raw[[2]][, 18]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+
+
+## Turtles ##
+
+plot(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 18], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "GC content", main = "Turtles")
+abline(lm(empirical_adequacy_raw[[3]][, 18] ~ empirical_adequacy_raw[[3]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[3]][, 18] ~ empirical_adequacy_raw[[3]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[3]][, 18] ~ empirical_adequacy_raw[[3]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[3]][, 18] ~ empirical_adequacy_raw[[3]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[3]][, 18] ~ empirical_adequacy_raw[[3]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[3]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[3]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 18], method = "spearman")
+legend(min(empirical_adequacy_raw[[3]][, 25]), max(empirical_adequacy_raw[[3]][, 18]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+dev.off()
+
+####### 7. Informative sites #######
+
+## Birds ##
+
+pdf("empirical_informativesites.pdf", height = 4, useDingbats = F, width = 12)
+par(mfrow = c(1, 3))
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 19], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Number of informative sites", main = "Birds")
+abline(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 19], method = "spearman")
+legend(min(empirical_adequacy_raw[[1]][, 25]), max(empirical_adequacy_raw[[1]][, 19]), legend = c("Chi-squared", "Delta", "Tree length", "Mean", paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), col = c("red", "green", "blue", "black", NA), lty = 1)
+
+## Mammals ##
+
+plot(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 19], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Number of informative sites", main = "Mammals")
+abline(lm(empirical_adequacy_raw[[2]][, 19] ~ empirical_adequacy_raw[[2]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[2]][, 19] ~ empirical_adequacy_raw[[2]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[2]][, 19] ~ empirical_adequacy_raw[[2]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[2]][, 19] ~ empirical_adequacy_raw[[2]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[2]][, 19] ~ empirical_adequacy_raw[[2]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[2]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[2]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[2]][, 25], empirical_adequacy_raw[[2]][, 19], method = "spearman")
+legend(min(empirical_adequacy_raw[[2]][, 25]), max(empirical_adequacy_raw[[2]][, 19]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+
+
+## Turtles ##
+
+plot(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 19], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Number of informative sites", main = "Turtles")
+abline(lm(empirical_adequacy_raw[[3]][, 19] ~ empirical_adequacy_raw[[3]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[3]][, 19] ~ empirical_adequacy_raw[[3]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[3]][, 19] ~ empirical_adequacy_raw[[3]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[3]][, 19] ~ empirical_adequacy_raw[[3]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[3]][, 19] ~ empirical_adequacy_raw[[3]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[3]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[3]][, 25], a[,3], lty = 2)
+spearcor <- cor.test(empirical_adequacy_raw[[3]][, 25], empirical_adequacy_raw[[3]][, 19], method = "spearman")
+legend(min(empirical_adequacy_raw[[3]][, 25]), max(empirical_adequacy_raw[[3]][, 19]), legend = c(paste0("rs = ", round(spearcor$estimate, 3), ", P-value = ", round(spearcor$p.value, 3))), box.lty = 0)
+dev.off()
+
+########### Partial results for the birds ############
+
+## Informative sites
+
+pdf("birds_rank_metrics.pdf", height = 16, useDingbats = F, width = 8)
+par(mfrow = c(4, 2))
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 19], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Number of informative sites", main = "Informative sites")
+abline(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 19] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+legend(50, 390, legend = c("Chi-squared", "Delta", "Tree length", "Mean"), col = c("red", "green", "blue", "black"), lty = 1)
+
+## GC content
+
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 18], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "GC content", main = "GC content")
+abline(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 18] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+legend(50, 390, legend = c("Chi-squared", "Delta", "Tree length", "Mean"), col = c("red", "green", "blue", "black"), lty = 1)
+
+
+
+## Topological distance
+
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 17], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Mean topological distance from other genes", main = "Topological distance")
+abline(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 17] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+legend(50, 390, legend = c("Chi-squared", "Delta", "Tree length", "Mean"), col = c("red", "green", "blue", "black"), lty = 1)
+
+## Node support
+
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 7], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Mean node support", main = "Node support")
+abline(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 7] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+legend(50, 390, legend = c("Chi-squared", "Delta", "Tree length", "Mean"), col = c("red", "green", "blue", "black"), lty = 1)
+
+## Tree length
+
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 13], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Tree length", main = "Tree length")
+abline(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 13] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+legend(50, 390, legend = c("Chi-squared", "Delta", "Tree length", "Mean"), col = c("red", "green", "blue", "black"), lty = 1)
+
+## Imbalance
+
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 15], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Topological imbalance", main = "Imbalance")
+abline(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 15] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+legend(50, 390, legend = c("Chi-squared", "Delta", "Tree length", "Mean"), col = c("red", "green", "blue", "black"), lty = 1)
+
+## Stemminess
+
+plot(empirical_adequacy_raw[[1]][, 25], empirical_adequacy_raw[[1]][, 16], pch = 20, col = "darkgrey", xlab = "Mean rank of adequacy", ylab = "Stemminess", main = "Stemminess")
+abline(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 22]), lwd = 1, col = "red")
+abline(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 23]), lwd = 1, col = "green")
+abline(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 24]), lwd = 1, col = "blue")
+abline(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 25]), lwd = 3, col = "black")
+a <- predict(lm(empirical_adequacy_raw[[1]][, 16] ~ empirical_adequacy_raw[[1]][, 25]), interval = "confidence")
+lines(empirical_adequacy_raw[[1]][, 25], a[,2], lty = 2)
+lines(empirical_adequacy_raw[[1]][, 25], a[,3], lty = 2)
+legend(50, 390, legend = c("Chi-squared", "Delta", "Tree length", "Mean"), col = c("red", "green", "blue", "black"), lty = 1)
+dev.off()
+

@@ -3,7 +3,6 @@ require(phangorn)
 require(apTreeshape)
 source("R/stemmy.R")
 folders <- c("bird_genes_all", "mammal_genes_all", "turtle_genes_all")
-load("empirical_mean_topdists.Rdata")
 empirical_adequacy_binary <- list()
 empirical_adequacy_raw <- list()
 for(j in 1:3){
@@ -26,13 +25,12 @@ for(i in 1:length(resfiles)){
 }
 teststats_pvals_resultmetrics_ranks[, 24] <- rank(abs(teststats_pvals_resultmetrics_ranks[, 24] - 0.5))
 teststats_pvals_resultmetrics_ranks[, 23] <- rank(abs(teststats_pvals_resultmetrics_ranks[, 23] - 0.5))
-teststats_pvals_resultmetrics_ranks[, 22] <- rank(teststats_pvals_resultmetrics_ranks[, 22])
+teststats_pvals_resultmetrics_ranks[, 22] <- rank(-teststats_pvals_resultmetrics_ranks[, 22])
 teststats_pvals_resultmetrics_ranks[, 25] <- apply(teststats_pvals_resultmetrics_ranks, 1, function(x) mean(c(x[24], x[23], x[22])))
 teststats_pvals_resultmetrics_ranks <- teststats_pvals_resultmetrics_ranks[order(teststats_pvals_resultmetrics_ranks[, 25]),]
 empirical_adequacy_binary[[j]] <- delta_trlen_chisq_passfail
 names(empirical_adequacy_binary[[j]]) <- resfiles
 empirical_adequacy_raw[[j]] <- teststats_pvals_resultmetrics_ranks
-empirical_adequacy_raw[[j]][, 17] <- meantopodists[[j]]
 setwd("..")
 
 }
