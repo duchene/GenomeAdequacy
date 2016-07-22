@@ -1,0 +1,5 @@
+biochemdiv.stat <- function(al){
+
+	
+
+}
