@@ -1,4 +1,4 @@
-run.gene.biochemdiv.stat <- function(sdata, format = "phyllip", model = "GTR+G", phymlPath, Nsims = 100, para = F, ncore = 1){
+run.gene.biochemdiv.stat <- function(sdata, format = "phyllip", model = "GTR+G", phymlPath = "~/Desktop/Software/PhyML-3.1/PhyML-3.1_macOS-MountainLion", Nsims = 100, para = F, ncore = 1){
 
          # Get test statistics
 
@@ -8,7 +8,9 @@ run.gene.biochemdiv.stat <- function(sdata, format = "phyllip", model = "GTR+G",
                   data <- read.dna(sdata, format = "fasta")
          }
 
-         empstats <- get.test.statistics(sdata, format = format, geneName = sdata, phymlPath = phymlPath, model = model)
+	 empstats <- get.test.statistics(sdata, format = format, geneName = sdata, phymlPath = phymlPath, model = model)
+	 
+         empdiv <- biochemdiv.stat(data)
 
          # Simulate data sets.
 
@@ -25,9 +27,8 @@ run.gene.biochemdiv.stat <- function(sdata, format = "phyllip", model = "GTR+G",
                }
 
          }
-	 
-	 
-	 
-
-
+	 divs <- sapply(sim, biochemdiv.stat)
+	 divs.p <- length(which(divs < empdiv)) / length(divs)
+	 res <- list(emp.div = empdiv, sim.divs = divs, divs.p.value = divs.p)
+	 return(res)
 }

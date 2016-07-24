@@ -1,0 +1,24 @@
+curdir <- getwd()
+setwd("../R")
+for(i in dir()) source(i)
+setwd(curdir)
+
+fols <- c("basecompdata", "saturationdata", "nulldata", "underparamdata", "misaligndata")
+res <- list()
+
+for(i in 1:length(fols)){
+      setwd(fols[i])
+      if(fols[i] == "misaligndata"){
+            res[[i]] <- matrix(NA, nrow = 100, ncol = 3)
+	    dat <- grep("0[.]5_", dir(), value = T)
+      } else {
+      	    dat <- grep("[.]phy", dir(), value = T)
+      	    res[[i]] <- matrix(NA, nrow = 200, ncol = 3)
+      }
+      res[[i]][, 1] <- dat
+      for(j in 1:length(dat)){
+	    res[[i]][j, 2:3] <- unlist(run.gene.biochemdiv.stat(dat[[j]])[c(1, 3)])
+      }
+      setwd("..")
+}
+
