@@ -19,7 +19,7 @@ get.test.statistics <- function(sdata, format = "phyllip", geneName = "empirical
 	# Get test statistics.
 	chisq <- getchisqs(data)
 	
-	homoplasy <- 1 #CI(phymlres$tree, phyDat(data))
+	homoplasy <- NULL #CI(phymlres$tree, phyDat(data))
 
 	# Return test statistics, tree, and parameter estimates.
 	
